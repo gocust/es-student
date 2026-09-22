@@ -62,8 +62,7 @@ int main()
             set_led(led);
         }
 
-        previous = current;
-
+        
         int command = getchar_timeout_us(0);
 
         if (command == PICO_ERROR_TIMEOUT)
@@ -72,6 +71,8 @@ int main()
         }
 
         led = handle_command(command, led);
+
+        previous = current;
     }
 }
 
