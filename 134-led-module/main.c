@@ -1,11 +1,36 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 #include <stdio.h>
+#include "led.h"
+#include "log.h"
 
-
-const uint LED_PIN = 25;
 const uint BUTTON_PIN = 15;
+
 const uint DEBOUNCE_MS = 20;
+
+bool handle_command(int command, bool led)
+{
+    if (command == 'e')
+    {
+       led_set(true);
+       printf("led %s\n", led_is_on() ? "on" : "off");
+    }
+    else if (command == 'd')
+    {
+        led_set(false);   
+        printf("led %s\n", led_is_on() ? "on" : "off");
+    }
+    else if (command == 'v')
+    {
+        log_version();
+    }
+    else
+    {
+        LOG_ERR("unknown command: %c\n", command);
+    }
+
+    return led;
+}
 
 bool get_button_debounce(uint pin)
 {
@@ -14,37 +39,12 @@ bool get_button_debounce(uint pin)
     return state && gpio_get(pin);
 }
 
-void set_led(bool on)
-{
-    gpio_put(LED_PIN, on);
-    printf("led %s\n", on ? "on" : "off");
-}
-
-bool handle_command(int command, bool led)
-{
-    if (command == 'e')
-    {
-        led = true;
-        set_led(led);
-    }
-    else if (command == 'd')
-    {
-        led = false;
-        set_led(led);
-    }
-    else
-    {
-        printf("unknown command: %c\n", command);
-    }
-
-    return led;
-}
-
 int main()
 {
-    stdio_init_all();   
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
+    stdio_init_all();
+
+    led_init();
+
     gpio_init(BUTTON_PIN);
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
     gpio_pull_up(BUTTON_PIN);
@@ -58,11 +58,12 @@ int main()
 
         if (previous == true && current == false)
         {
-            led = !led;
-            set_led(led);
+            led_toggle();
+            LOG_INF("led %s\n", led_is_on() ? "on" : "off");
         }
 
-        
+        previous = current;
+
         int command = getchar_timeout_us(0);
 
         if (command == PICO_ERROR_TIMEOUT)
@@ -70,10 +71,7 @@ int main()
             continue;
         }
 
-        led = handle_command(command, led);
-
-        previous = current;
+        LOG_DBG("got %c\n", command);
+        handle_command(command, led);
     }
 }
-
-
