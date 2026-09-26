@@ -71,7 +71,7 @@ include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/flags
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S: pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
-	cd C:/Repositories/pico/es-student/134-led-module/build/pico-sdk/src/rp2040/boot_stage2 && "C:/Program Files/Python313/python.exe" C:/Repositories/pico/pico-sdk/src/rp2040/boot_stage2/pad_checksum -s 0xffffffff C:/Repositories/pico/es-student/134-led-module/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin C:/Repositories/pico/es-student/134-led-module/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
+	cd C:/Repositories/pico/es-student/134-led-module/build/pico-sdk/src/rp2040/boot_stage2 && C:/Users/Hocust/AppData/Local/Python/pythoncore-3.14-64/python.exe C:/Repositories/pico/pico-sdk/src/rp2040/boot_stage2/pad_checksum -s 0xffffffff C:/Repositories/pico/es-student/134-led-module/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin C:/Repositories/pico/es-student/134-led-module/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default.bin: pico-sdk/src/rp2040/boot_stage2/bs2_default.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"

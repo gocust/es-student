@@ -13,12 +13,12 @@ bool handle_command(int command, bool led)
     if (command == 'e')
     {
        led_set(true);
-       printf("led %s\n", led_is_on() ? "on" : "off");
+       LOG_INF("led %s\n", led_is_on() ? "on" : "off");
     }
     else if (command == 'd')
     {
         led_set(false);   
-        printf("led %s\n", led_is_on() ? "on" : "off");
+        LOG_INF("led %s\n", led_is_on() ? "on" : "off");
     }
     else if (command == 'v')
     {

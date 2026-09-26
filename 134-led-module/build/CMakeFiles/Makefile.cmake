@@ -129,6 +129,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/FeatureTesting.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake"
+  "C:/Program Files/Picotool/picotool/picotoolConfig.cmake"
+  "C:/Program Files/Picotool/picotool/picotoolConfigVersion.cmake"
+  "C:/Program Files/Picotool/picotool/picotoolTargets-release.cmake"
+  "C:/Program Files/Picotool/picotool/picotoolTargets.cmake"
   "C:/Repositories/pico/es-student/134-led-module/CMakeLists.txt"
   "CMakeFiles/4.4.3/CMakeASMCompiler.cmake"
   "CMakeFiles/4.4.3/CMakeCCompiler.cmake"
@@ -265,10 +269,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Repositories/pico/pico-sdk/src/rp2_common/tinyusb/CMakeLists.txt"
   "C:/Repositories/pico/pico-sdk/tools/CMakeLists.txt"
   "C:/Repositories/pico/pico-sdk/tools/Findpioasm.cmake"
-  "C:/picotool/picotool/picotoolConfig.cmake"
-  "C:/picotool/picotool/picotoolConfigVersion.cmake"
-  "C:/picotool/picotool/picotoolTargets-release.cmake"
-  "C:/picotool/picotool/picotoolTargets.cmake"
   )
 
 # The corresponding makefile is:

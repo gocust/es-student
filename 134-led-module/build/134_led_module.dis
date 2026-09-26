@@ -43,27 +43,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS
  19 .stack_dummy  00000800  20041000  20041000  0000a000  2**5
                   ALLOC, READONLY
- 20 .debug_info   0002fc3d  00000000  00000000  00009030  2**0
+ 20 .debug_info   0002fc92  00000000  00000000  00009030  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_abbrev 00008ad1  00000000  00000000  00038c6d  2**0
+ 21 .debug_abbrev 00008ad1  00000000  00000000  00038cc2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loclists 00019d5f  00000000  00000000  0004173e  2**0
+ 22 .debug_loclists 00019d61  00000000  00000000  00041793  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_aranges 00001698  00000000  00000000  0005b4a0  2**3
+ 23 .debug_aranges 00001698  00000000  00000000  0005b4f8  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 24 .debug_rnglists 0000440b  00000000  00000000  0005cb38  2**0
+ 24 .debug_rnglists 0000440c  00000000  00000000  0005cb90  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 25 .debug_line   00023522  00000000  00000000  00060f43  2**0
+ 25 .debug_line   0002352c  00000000  00000000  00060f9c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 26 .debug_str    00008bbb  00000000  00000000  00084465  2**0
+ 26 .debug_str    00008bbb  00000000  00000000  000844c8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 27 .comment      00000046  00000000  00000000  0008d020  2**0
+ 27 .comment      00000046  00000000  00000000  0008d083  2**0
                   CONTENTS, READONLY
- 28 .ARM.attributes 0000002a  00000000  00000000  0008d066  2**0
+ 28 .ARM.attributes 0000002a  00000000  00000000  0008d0c9  2**0
                   CONTENTS, READONLY
- 29 .debug_frame  00002db4  00000000  00000000  0008d090  2**2
+ 29 .debug_frame  00002db4  00000000  00000000  0008d0f4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 30 .debug_line_str 00000361  00000000  00000000  0008fe44  2**0
+ 30 .debug_line_str 00000361  00000000  00000000  0008fea8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 C:/Repositories/pico/es-student/134-led-module/build/134_led_module.elf:     file format elf32-littlearm
@@ -323,23 +323,23 @@ Disassembly of section .text:
 100002b2:	4b38      	ldr	r3, [pc, #224]	@ (10000394 <main+0x114>)
 100002b4:	4698      	mov	r8, r3
 100002b6:	4b38      	ldr	r3, [pc, #224]	@ (10000398 <main+0x118>)
-100002b8:	9305      	str	r3, [sp, #20]
+100002b8:	9301      	str	r3, [sp, #4]
 100002ba:	4b38      	ldr	r3, [pc, #224]	@ (1000039c <main+0x11c>)
-100002bc:	9304      	str	r3, [sp, #16]
+100002bc:	9305      	str	r3, [sp, #20]
 100002be:	4b38      	ldr	r3, [pc, #224]	@ (100003a0 <main+0x120>)
 100002c0:	9300      	str	r3, [sp, #0]
 100002c2:	4b38      	ldr	r3, [pc, #224]	@ (100003a4 <main+0x124>)
-100002c4:	469b      	mov	fp, r3
+100002c4:	9302      	str	r3, [sp, #8]
 100002c6:	4b38      	ldr	r3, [pc, #224]	@ (100003a8 <main+0x128>)
 100002c8:	469a      	mov	sl, r3
 100002ca:	4b38      	ldr	r3, [pc, #224]	@ (100003ac <main+0x12c>)
 100002cc:	4699      	mov	r9, r3
 100002ce:	4b38      	ldr	r3, [pc, #224]	@ (100003b0 <main+0x130>)
-100002d0:	9301      	str	r3, [sp, #4]
+100002d0:	469b      	mov	fp, r3
 100002d2:	4b38      	ldr	r3, [pc, #224]	@ (100003b4 <main+0x134>)
-100002d4:	9302      	str	r3, [sp, #8]
+100002d4:	9303      	str	r3, [sp, #12]
 100002d6:	4b38      	ldr	r3, [pc, #224]	@ (100003b8 <main+0x138>)
-100002d8:	9303      	str	r3, [sp, #12]
+100002d8:	9304      	str	r3, [sp, #16]
 100002da:	686c      	ldr	r4, [r5, #4]
 100002dc:	2014      	movs	r0, #20
 100002de:	f000 fedf 	bl	100010a0 <sleep_ms>
@@ -364,15 +364,15 @@ Disassembly of section .text:
 1000030c:	2c65      	cmp	r4, #101	@ 0x65
 1000030e:	d029      	beq.n	10000364 <main+0xe4>
 10000310:	2c64      	cmp	r4, #100	@ 0x64
-10000312:	d034      	beq.n	1000037e <main+0xfe>
+10000312:	d039      	beq.n	10000388 <main+0x108>
 10000314:	2c76      	cmp	r4, #118	@ 0x76
 10000316:	d022      	beq.n	1000035e <main+0xde>
 10000318:	221d      	movs	r2, #29
-1000031a:	9901      	ldr	r1, [sp, #4]
-1000031c:	9802      	ldr	r0, [sp, #8]
+1000031a:	4659      	mov	r1, fp
+1000031c:	9803      	ldr	r0, [sp, #12]
 1000031e:	f000 f89d 	bl	1000045c <log_prefix>
 10000322:	0021      	movs	r1, r4
-10000324:	9803      	ldr	r0, [sp, #12]
+10000324:	9804      	ldr	r0, [sp, #16]
 10000326:	f004 f81b 	bl	10004360 <__wrap_printf>
 1000032a:	686c      	ldr	r4, [r5, #4]
 1000032c:	2014      	movs	r0, #20
@@ -384,14 +384,14 @@ Disassembly of section .text:
 1000033a:	f000 f85d 	bl	100003f8 <led_toggle>
 1000033e:	4641      	mov	r1, r8
 10000340:	223e      	movs	r2, #62	@ 0x3e
-10000342:	9805      	ldr	r0, [sp, #20]
+10000342:	9801      	ldr	r0, [sp, #4]
 10000344:	f000 f88a 	bl	1000045c <log_prefix>
 10000348:	f000 f86a 	bl	10000420 <led_is_on>
 1000034c:	9900      	ldr	r1, [sp, #0]
 1000034e:	2800      	cmp	r0, #0
 10000350:	d000      	beq.n	10000354 <main+0xd4>
-10000352:	9904      	ldr	r1, [sp, #16]
-10000354:	4658      	mov	r0, fp
+10000352:	9905      	ldr	r1, [sp, #20]
+10000354:	9802      	ldr	r0, [sp, #8]
 10000356:	f004 f803 	bl	10004360 <__wrap_printf>
 1000035a:	2700      	movs	r7, #0
 1000035c:	e7c7      	b.n	100002ee <main+0x6e>
@@ -399,33 +399,33 @@ Disassembly of section .text:
 10000362:	e7ba      	b.n	100002da <main+0x5a>
 10000364:	2001      	movs	r0, #1
 10000366:	f000 f839 	bl	100003dc <led_set>
-1000036a:	f000 f859 	bl	10000420 <led_is_on>
-1000036e:	9900      	ldr	r1, [sp, #0]
-10000370:	2800      	cmp	r0, #0
-10000372:	d000      	beq.n	10000376 <main+0xf6>
-10000374:	9904      	ldr	r1, [sp, #16]
-10000376:	4658      	mov	r0, fp
-10000378:	f003 fff2 	bl	10004360 <__wrap_printf>
-1000037c:	e7ad      	b.n	100002da <main+0x5a>
-1000037e:	2000      	movs	r0, #0
-10000380:	f000 f82c 	bl	100003dc <led_set>
-10000384:	f000 f84c 	bl	10000420 <led_is_on>
-10000388:	9900      	ldr	r1, [sp, #0]
-1000038a:	2800      	cmp	r0, #0
-1000038c:	d0f3      	beq.n	10000376 <main+0xf6>
-1000038e:	9904      	ldr	r1, [sp, #16]
-10000390:	e7f1      	b.n	10000376 <main+0xf6>
+1000036a:	2210      	movs	r2, #16
+1000036c:	4659      	mov	r1, fp
+1000036e:	9801      	ldr	r0, [sp, #4]
+10000370:	f000 f874 	bl	1000045c <log_prefix>
+10000374:	f000 f854 	bl	10000420 <led_is_on>
+10000378:	9900      	ldr	r1, [sp, #0]
+1000037a:	2800      	cmp	r0, #0
+1000037c:	d000      	beq.n	10000380 <main+0x100>
+1000037e:	9905      	ldr	r1, [sp, #20]
+10000380:	9802      	ldr	r0, [sp, #8]
+10000382:	f003 ffed 	bl	10004360 <__wrap_printf>
+10000386:	e7a8      	b.n	100002da <main+0x5a>
+10000388:	2000      	movs	r0, #0
+1000038a:	f000 f827 	bl	100003dc <led_set>
+1000038e:	2215      	movs	r2, #21
+10000390:	e7ec      	b.n	1000036c <main+0xec>
 10000392:	46c0      	nop			@ (mov r8, r8)
 10000394:	100069e0 	.word	0x100069e0
-10000398:	10006804 	.word	0x10006804
+10000398:	100067e0 	.word	0x100067e0
 1000039c:	100067d8 	.word	0x100067d8
 100003a0:	100067dc 	.word	0x100067dc
-100003a4:	100067e0 	.word	0x100067e0
+100003a4:	100067e4 	.word	0x100067e4
 100003a8:	10006808 	.word	0x10006808
 100003ac:	1000680c 	.word	0x1000680c
 100003b0:	100069e8 	.word	0x100069e8
-100003b4:	100067e8 	.word	0x100067e8
-100003b8:	100067ec 	.word	0x100067ec
+100003b4:	100067ec 	.word	0x100067ec
+100003b8:	100067f0 	.word	0x100067f0
 
 100003bc <led_init>:
 100003bc:	2019      	movs	r0, #25
@@ -591,7 +591,7 @@ Disassembly of section .text:
 10000502:	2001      	movs	r0, #1
 10000504:	f003 fce4 	bl	10003ed0 <_exit>
 10000508:	1000687c 	.word	0x1000687c
-1000050c:	10006800 	.word	0x10006800
+1000050c:	10006804 	.word	0x10006804
 
 10000510 <hw_claim_or_assert>:
 10000510:	b570      	push	{r4, r5, r6, lr}

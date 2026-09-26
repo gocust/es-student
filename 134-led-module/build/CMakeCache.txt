@@ -352,7 +352,7 @@ pico_sdk_IS_TOP_LEVEL:STATIC=OFF
 pico_sdk_SOURCE_DIR:STATIC=C:/Repositories/pico/pico-sdk
 
 //The directory containing a CMake configuration file for picotool.
-picotool_DIR:PATH=C:/picotool/picotool
+picotool_DIR:PATH=C:/Program Files/Picotool/picotool
 
 //The directory containing a CMake configuration file for pioasm.
 pioasm_DIR:PATH=pioasm_DIR-NOTFOUND
@@ -543,7 +543,7 @@ DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 FAMILY_MCUS:INTERNAL=RP2040
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Program Files/Python313/python.exe][found components: Interpreter ][v3.13.12()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[C:/Users/Hocust/AppData/Local/Python/pythoncore-3.14-64/python.exe][found components: Interpreter ][v3.14.5()]
 PICO_32BIT:INTERNAL=1
 PICO_ARM:INTERNAL=1
 PICO_BOOT_STAGE2_DIR:INTERNAL=C:/Repositories/pico/pico-sdk/src/rp2040/boot_stage2
@@ -578,10 +578,10 @@ _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
 //Path to a program.
-_Python3_EXECUTABLE:INTERNAL=C:/Program Files/Python313/python.exe
+_Python3_EXECUTABLE:INTERNAL=C:/Users/Hocust/AppData/Local/Python/pythoncore-3.14-64/python.exe
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;12;ARM;ARM64;32;64;<none>;;abi3;C:\Program Files\Python313\Lib;C:\Program Files\Python313\Lib;C:\Program Files\Python313\Lib\site-packages;C:\Program Files\Python313\Lib\site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=7600fbf66bbc46558ab6448f79dd423a
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;14;5;ARM;ARM64;32;64;<none>;;abi3;C:\Users\Hocust\AppData\Local\Python\pythoncore-3.14-64\Lib;C:\Users\Hocust\AppData\Local\Python\pythoncore-3.14-64\Lib;C:\Users\Hocust\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages;C:\Users\Hocust\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=24af10e03c76987b8550843ad52868ed
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 
