@@ -2393,7 +2393,7 @@ pico-sdk/tools/clean:
 CMakeFiles/134_led_module.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/134_led_module.dir/build.make CMakeFiles/134_led_module.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/134_led_module.dir/build.make CMakeFiles/134_led_module.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target 134_led_module"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Built target 134_led_module"
 .PHONY : CMakeFiles/134_led_module.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2410,7 +2410,7 @@ CMakeFiles/134_led_module.dir/rule: cmake_check_build_system
 # codegen rule for target.
 CMakeFiles/134_led_module.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/134_led_module.dir/build.make CMakeFiles/134_led_module.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Finished codegen for target 134_led_module"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85 "Finished codegen for target 134_led_module"
 .PHONY : CMakeFiles/134_led_module.dir/codegen
 
 # clean rule for target.
@@ -2425,12 +2425,12 @@ CMakeFiles/134_led_module.dir/clean:
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=85,86 "Built target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=86 "Built target bs2_default"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/all
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/rule
@@ -2442,7 +2442,7 @@ bs2_default: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/rule
 # codegen rule for target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=85,86 "Finished codegen for target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles --progress-num=86 "Finished codegen for target bs2_default"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/codegen
 
 # clean rule for target.
@@ -2462,7 +2462,7 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/all: pico-sdk/src
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/rule
@@ -2494,7 +2494,7 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all: pico-sdk
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/134-led-module/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/rule

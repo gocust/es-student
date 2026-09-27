@@ -1,6 +1,3 @@
-# Проверка задания п1.3.2 на устройстве: слушает COM-порт платы
-# и записывает всё принятое в файл device-1-3-2.log.
-
 import time
 from datetime import datetime
 

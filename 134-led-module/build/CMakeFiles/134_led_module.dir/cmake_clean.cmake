@@ -166,6 +166,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
   "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.obj"
   "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.obj.d"
+  "CMakeFiles/134_led_module.dir/device/device.c.obj"
+  "CMakeFiles/134_led_module.dir/device/device.c.obj.d"
   "CMakeFiles/134_led_module.dir/led/led.c.obj"
   "CMakeFiles/134_led_module.dir/led/led.c.obj.d"
   "CMakeFiles/134_led_module.dir/logging/log.c.obj"

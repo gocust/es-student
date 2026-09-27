@@ -27,6 +27,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "CFG_TUSB_DEBUG=0"
   "CFG_TUSB_MCU=OPT_MCU_RP2040"
   "CFG_TUSB_OS=OPT_OS_PICO"
+  [[DEVICE_BOARD="pico"]]
   "LIB_BOOT_STAGE2_HEADERS=1"
   "LIB_PICO_ATOMIC=1"
   "LIB_PICO_BIT_OPS=1"
@@ -93,6 +94,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Repositories/pico/es-student/134-led-module/led"
   "C:/Repositories/pico/es-student/134-led-module/logging"
+  "C:/Repositories/pico/es-student/134-led-module/device"
   "C:/Repositories/pico/pico-sdk/src/rp2_common/pico_atomic/include"
   "C:/Repositories/pico/pico-sdk/lib/tinyusb/src"
   "C:/Repositories/pico/pico-sdk/src/common/pico_stdlib_headers/include"
@@ -233,6 +235,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Repositories/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c" "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.obj" "gcc" "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.obj.d"
   "C:/Repositories/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj" "gcc" "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d"
   "C:/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c" "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.obj" "gcc" "CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.obj.d"
+  "C:/Repositories/pico/es-student/134-led-module/device/device.c" "CMakeFiles/134_led_module.dir/device/device.c.obj" "gcc" "CMakeFiles/134_led_module.dir/device/device.c.obj.d"
   "C:/Repositories/pico/es-student/134-led-module/led/led.c" "CMakeFiles/134_led_module.dir/led/led.c.obj" "gcc" "CMakeFiles/134_led_module.dir/led/led.c.obj.d"
   "C:/Repositories/pico/es-student/134-led-module/logging/log.c" "CMakeFiles/134_led_module.dir/logging/log.c.obj" "gcc" "CMakeFiles/134_led_module.dir/logging/log.c.obj.d"
   "C:/Repositories/pico/es-student/134-led-module/main.c" "CMakeFiles/134_led_module.dir/main.c.obj" "gcc" "CMakeFiles/134_led_module.dir/main.c.obj.d"

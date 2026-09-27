@@ -2079,6 +2079,30 @@ C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/134_led_module.dir/build.make CMakeFiles/134_led_module.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.s
 .PHONY : C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.c.s
 
+device/device.obj: device/device.c.obj
+.PHONY : device/device.obj
+
+# target to build an object file
+device/device.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/134_led_module.dir/build.make CMakeFiles/134_led_module.dir/device/device.c.obj
+.PHONY : device/device.c.obj
+
+device/device.i: device/device.c.i
+.PHONY : device/device.i
+
+# target to preprocess a source file
+device/device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/134_led_module.dir/build.make CMakeFiles/134_led_module.dir/device/device.c.i
+.PHONY : device/device.c.i
+
+device/device.s: device/device.c.s
+.PHONY : device/device.s
+
+# target to generate assembly for a file
+device/device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/134_led_module.dir/build.make CMakeFiles/134_led_module.dir/device/device.c.s
+.PHONY : device/device.c.s
+
 led/led.obj: led/led.c.obj
 .PHONY : led/led.obj
 
@@ -2400,6 +2424,9 @@ help:
 	@echo "... C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.obj"
 	@echo "... C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.i"
 	@echo "... C_/Repositories/pico/pico-sdk/src/rp2_common/pico_usb_reset/usb_reset.s"
+	@echo "... device/device.obj"
+	@echo "... device/device.i"
+	@echo "... device/device.s"
 	@echo "... led/led.obj"
 	@echo "... led/led.i"
 	@echo "... led/led.s"

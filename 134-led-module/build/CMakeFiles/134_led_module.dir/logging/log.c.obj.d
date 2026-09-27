@@ -17,4 +17,5 @@ CMakeFiles/134_led_module.dir/logging/log.c.obj: \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_types.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
- C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+ C:/Repositories/pico/es-student/134-led-module/device/device.h
