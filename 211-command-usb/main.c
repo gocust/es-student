@@ -5,6 +5,7 @@
 #include "led.h"
 #include "log.h"
 #include "device.h"
+#include "memory.h"
 
 const uint BUTTON_PIN = 15;
 
@@ -22,6 +23,7 @@ void cmd_disable(void){led_set(false);LOG_INF("led %s\n", led_is_on() ? "on" : "
 void cmd_info(void){device_info();}
 void cmd_version(void){log_version();}
 void cmd_pong(void){printf("pong\n");}
+void cmd_mem_info(void){mem_info();}
 
 struct command_t
 {
@@ -35,9 +37,10 @@ const struct command_t commands[] = {
     { "info", cmd_info },
     { "version", cmd_version },
     { "ping", cmd_pong },
+    { "mem_info", cmd_mem_info }
 };
 
-#define COMMAND_COUNT (sizeof(commands) / sizeof(commands[0]))
+#define COMMAND_COUNT (sizeof(commands) / sizeof(commands[0]))  
 
 void handle_command(const char *command)
 {

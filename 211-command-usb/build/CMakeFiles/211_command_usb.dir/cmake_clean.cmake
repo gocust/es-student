@@ -174,6 +174,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/211_command_usb.dir/logging/log.c.obj.d"
   "CMakeFiles/211_command_usb.dir/main.c.obj"
   "CMakeFiles/211_command_usb.dir/main.c.obj.d"
+  "CMakeFiles/211_command_usb.dir/memory/memory.c.obj"
+  "CMakeFiles/211_command_usb.dir/memory/memory.c.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

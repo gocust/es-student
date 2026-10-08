@@ -95,6 +95,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "C:/Repositories/pico/es-student/211-command-usb/led"
   "C:/Repositories/pico/es-student/211-command-usb/logging"
   "C:/Repositories/pico/es-student/211-command-usb/device"
+  "C:/Repositories/pico/es-student/211-command-usb/memory"
   "C:/Repositories/pico/pico-sdk/src/rp2_common/pico_atomic/include"
   "C:/Repositories/pico/pico-sdk/lib/tinyusb/src"
   "C:/Repositories/pico/pico-sdk/src/common/pico_stdlib_headers/include"
@@ -239,6 +240,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Repositories/pico/es-student/211-command-usb/led/led.c" "CMakeFiles/211_command_usb.dir/led/led.c.obj" "gcc" "CMakeFiles/211_command_usb.dir/led/led.c.obj.d"
   "C:/Repositories/pico/es-student/211-command-usb/logging/log.c" "CMakeFiles/211_command_usb.dir/logging/log.c.obj" "gcc" "CMakeFiles/211_command_usb.dir/logging/log.c.obj.d"
   "C:/Repositories/pico/es-student/211-command-usb/main.c" "CMakeFiles/211_command_usb.dir/main.c.obj" "gcc" "CMakeFiles/211_command_usb.dir/main.c.obj.d"
+  "C:/Repositories/pico/es-student/211-command-usb/memory/memory.c" "CMakeFiles/211_command_usb.dir/memory/memory.c.obj" "gcc" "CMakeFiles/211_command_usb.dir/memory/memory.c.obj.d"
   "C:/Repositories/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/211_command_usb.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.obj" "gcc" "CMakeFiles/211_command_usb.dir/C_/Repositories/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.obj.d"
   )
 

@@ -2175,6 +2175,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/211_command_usb.dir/build.make CMakeFiles/211_command_usb.dir/main.c.s
 .PHONY : main.c.s
 
+memory/memory.obj: memory/memory.c.obj
+.PHONY : memory/memory.obj
+
+# target to build an object file
+memory/memory.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/211_command_usb.dir/build.make CMakeFiles/211_command_usb.dir/memory/memory.c.obj
+.PHONY : memory/memory.c.obj
+
+memory/memory.i: memory/memory.c.i
+.PHONY : memory/memory.i
+
+# target to preprocess a source file
+memory/memory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/211_command_usb.dir/build.make CMakeFiles/211_command_usb.dir/memory/memory.c.i
+.PHONY : memory/memory.c.i
+
+memory/memory.s: memory/memory.c.s
+.PHONY : memory/memory.s
+
+# target to generate assembly for a file
+memory/memory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/211_command_usb.dir/build.make CMakeFiles/211_command_usb.dir/memory/memory.c.s
+.PHONY : memory/memory.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2436,6 +2460,9 @@ help:
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... memory/memory.obj"
+	@echo "... memory/memory.i"
+	@echo "... memory/memory.s"
 .PHONY : help
 
 

@@ -2398,7 +2398,7 @@ CMakeFiles/211_command_usb.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/b
 
 # Build rule for subdir invocation for target.
 CMakeFiles/211_command_usb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 89
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 90
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/211_command_usb.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 0
 .PHONY : CMakeFiles/211_command_usb.dir/rule
@@ -2425,12 +2425,12 @@ CMakeFiles/211_command_usb.dir/clean:
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/all:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles --progress-num=86 "Built target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles --progress-num=86,87 "Built target bs2_default"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/all
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/rule
@@ -2442,7 +2442,7 @@ bs2_default: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/rule
 # codegen rule for target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles --progress-num=86 "Finished codegen for target bs2_default"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles --progress-num=86,87 "Finished codegen for target bs2_default"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/codegen
 
 # clean rule for target.
@@ -2457,7 +2457,7 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/clean:
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/all: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles --progress-num=87 "Built target bs2_default_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles --progress-num= "Built target bs2_default_bin"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2474,7 +2474,7 @@ bs2_default_bin: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/
 # codegen rule for target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/codegen: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles --progress-num=87 "Finished codegen for target bs2_default_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles --progress-num= "Finished codegen for target bs2_default_bin"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin.dir/codegen
 
 # clean rule for target.
@@ -2494,7 +2494,7 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all: pico-sdk
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:/Repositories/pico/es-student/211-command-usb/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/rule
