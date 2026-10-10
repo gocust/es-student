@@ -57,7 +57,7 @@ void mem_info(void)
         (unsigned)((uintptr_t)&__data_end__ - (uintptr_t)&__data_start__)
     );
 
-    printf("  free        %8u of %u\n", 
+    printf("  flash free  %8u of %u\n", 
     (unsigned)(XIP_BASE + PICO_FLASH_SIZE_BYTES - (uintptr_t)&__flash_binary_end),
     PICO_FLASH_SIZE_BYTES);
 
