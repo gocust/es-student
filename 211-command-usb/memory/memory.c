@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include "hardware/regs/addressmap.h"
 #include "pico/stdlib.h"
+#include "command.h"
 
 extern char __flash_binary_start;
 extern char __flash_binary_end;
@@ -15,6 +16,12 @@ extern char __bss_end__;
 extern char __HeapLimit;
 extern char __StackBottom;
 extern char __StackTop;
+
+int main(void);
+
+// uint16_t *main_code = (uint16_t *)((uintptr_t)main & ~1u);
+uint32_t data_variable = 100;
+uint32_t bss_variable;
 
 
 static void row(const char *name, uintptr_t start, uintptr_t end)
@@ -44,13 +51,13 @@ void mem_info(void)
 
     printf("\ntotal\n");
 
-    printf("  flash image    %8u = boot2 256 + text %u + data %u\n", 
+    printf("  flash image %8u = boot2 256 + text %u + data %u\n", 
         (unsigned)((uintptr_t)&__flash_binary_end - (uintptr_t)&__flash_binary_start), 
         (unsigned)((uintptr_t)&__etext - (uintptr_t)&__boot2_end__),
         (unsigned)((uintptr_t)&__data_end__ - (uintptr_t)&__data_start__)
     );
 
-    printf("  free    %8u of %u\n", 
+    printf("  free        %8u of %u\n", 
     (unsigned)(XIP_BASE + PICO_FLASH_SIZE_BYTES - (uintptr_t)&__flash_binary_end),
     PICO_FLASH_SIZE_BYTES);
 

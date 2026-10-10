@@ -3936,6 +3936,7 @@ CMakeFiles/211_command_usb.dir/main.c.obj: C:/Repositories/pico/es-student/211-c
   C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdint.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
+  C:/Repositories/pico/es-student/211-command-usb/command.h \
   C:/Repositories/pico/es-student/211-command-usb/device/device.h \
   C:/Repositories/pico/es-student/211-command-usb/led/led.h \
   C:/Repositories/pico/es-student/211-command-usb/logging/log.h \
@@ -4011,6 +4012,7 @@ CMakeFiles/211_command_usb.dir/memory/memory.c.obj: C:/Repositories/pico/es-stud
   C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdint.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
+  C:/Repositories/pico/es-student/211-command-usb/command.h \
   C:/Repositories/pico/pico-sdk/src/boards/include/boards/pico.h \
   C:/Repositories/pico/pico-sdk/src/common/pico_base_headers/include/pico.h \
   C:/Repositories/pico/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
@@ -4639,5 +4641,7 @@ C:/Repositories/pico/es-student/211-command-usb/led/led.h:
 C:/Repositories/pico/es-student/211-command-usb/logging/log.c:
 
 C:/Repositories/pico/es-student/211-command-usb/main.c:
+
+C:/Repositories/pico/es-student/211-command-usb/command.h:
 
 C:/Repositories/pico/es-student/211-command-usb/memory/memory.c:

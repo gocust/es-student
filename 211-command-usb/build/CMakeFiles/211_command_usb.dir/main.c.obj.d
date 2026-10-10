@@ -78,4 +78,5 @@ CMakeFiles/211_command_usb.dir/main.c.obj: \
  C:/Repositories/pico/es-student/211-command-usb/led/led.h \
  C:/Repositories/pico/es-student/211-command-usb/logging/log.h \
  C:/Repositories/pico/es-student/211-command-usb/device/device.h \
- C:/Repositories/pico/es-student/211-command-usb/memory/memory.h
+ C:/Repositories/pico/es-student/211-command-usb/memory/memory.h \
+ C:/Repositories/pico/es-student/211-command-usb/command.h

@@ -70,4 +70,5 @@ CMakeFiles/211_command_usb.dir/memory/memory.c.obj: \
  C:/Repositories/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  C:/Repositories/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  C:/Repositories/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- C:/Repositories/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
+ C:/Repositories/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+ C:/Repositories/pico/es-student/211-command-usb/command.h

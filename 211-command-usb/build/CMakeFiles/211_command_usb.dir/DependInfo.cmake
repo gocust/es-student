@@ -92,6 +92,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "C:/Repositories/pico/es-student/211-command-usb"
   "C:/Repositories/pico/es-student/211-command-usb/led"
   "C:/Repositories/pico/es-student/211-command-usb/logging"
   "C:/Repositories/pico/es-student/211-command-usb/device"
