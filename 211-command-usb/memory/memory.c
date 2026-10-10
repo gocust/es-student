@@ -58,7 +58,7 @@ void mem_info(void)
     );
 
     printf("  free        %8u of %u\n", 
-    (unsigned)((uintptr_t)&__HeapLimit - (uintptr_t)&__bss_end__) + (unsigned)((uintptr_t)&__StackTop - (uintptr_t)&__StackBottom),
+    (unsigned)(XIP_BASE + PICO_FLASH_SIZE_BYTES - (uintptr_t)&__flash_binary_end),
     PICO_FLASH_SIZE_BYTES);
 
     printf("  ram used    %8u = data %u + bss %u\n",
