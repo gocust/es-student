@@ -24,7 +24,7 @@ extern char __StackBottom;
 extern char __StackTop;
 
 extern int main(void);
-
+static int led_pin(){return 25;}
 
 uint32_t data_variable = 100;
 uint32_t bss_variable;
@@ -123,13 +123,13 @@ void boot_info(void){
     uint32_t stack_top = vectors[0];
     uint32_t reset_handler = vectors[1];
     volatile uint32_t *gpio_in = (uint32_t *)(SIO_BASE + SIO_GPIO_IN_OFFSET);
-    uint32_t level = (*gpio_in >> 25) & 1u;
+    uint32_t level = (*gpio_in >> led_pin()) & 1u;
 
-    printf("vector table   %08x\n", vectors);
-    printf("  stack top    %08x\n", vectors[0]);
-    printf("  reset        %08x\n", vectors[1]);
-    printf("  reset (even) %08x\n", vectors[1] & ~1u);
-    printf("gpio in        %08x\n", gpio_in);
-    printf("  led bit      %01x\n", level);
-    printf("  gpio_get     %01x\n", gpio_get(25));
+    printf("vector table   0x%08x\n", vectors);
+    printf("  stack top    0x%08x\n", vectors[0]);
+    printf("  reset        0x%08x\n", vectors[1]);
+    printf("  reset (even) 0x%08x\n", vectors[1] & ~1u);
+    printf("gpio in        0x%08x\n", gpio_in);
+    printf("  led bit      0x%01x\n", level);
+    printf("  gpio_get     0x%01x\n", gpio_get(25));
 }

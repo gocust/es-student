@@ -43,27 +43,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS
  19 .stack_dummy  00000800  20041000  20041000  0000c000  2**5
                   ALLOC, READONLY
- 20 .debug_info   00031974  00000000  00000000  0000b658  2**0
+ 20 .debug_info   00031981  00000000  00000000  0000b658  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_abbrev 000091b8  00000000  00000000  0003cfcc  2**0
+ 21 .debug_abbrev 000091cb  00000000  00000000  0003cfd9  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_loclists 0001a3a5  00000000  00000000  00046184  2**0
+ 22 .debug_loclists 0001a3a5  00000000  00000000  000461a4  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_aranges 00001778  00000000  00000000  00060530  2**3
+ 23 .debug_aranges 00001778  00000000  00000000  00060550  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 24 .debug_rnglists 00004515  00000000  00000000  00061ca8  2**0
+ 24 .debug_rnglists 00004515  00000000  00000000  00061cc8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 25 .debug_line   00024690  00000000  00000000  000661bd  2**0
+ 25 .debug_line   00024698  00000000  00000000  000661dd  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 26 .debug_str    00008ed5  00000000  00000000  0008a84d  2**0
+ 26 .debug_str    00008edd  00000000  00000000  0008a875  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 27 .comment      00000046  00000000  00000000  00093722  2**0
+ 27 .comment      00000046  00000000  00000000  00093752  2**0
                   CONTENTS, READONLY
- 28 .ARM.attributes 0000002a  00000000  00000000  00093768  2**0
+ 28 .ARM.attributes 0000002a  00000000  00000000  00093798  2**0
                   CONTENTS, READONLY
- 29 .debug_frame  00003374  00000000  00000000  00093794  2**2
+ 29 .debug_frame  00003374  00000000  00000000  000937c4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 30 .debug_line_str 00000362  00000000  00000000  00096b08  2**0
+ 30 .debug_line_str 00000362  00000000  00000000  00096b38  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 C:/Repositories/pico/es-student/211-command-usb/build/211_command_usb.elf:     file format elf32-littlearm
