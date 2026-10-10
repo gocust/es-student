@@ -7,6 +7,7 @@
 #include "device.h"
 #include "hardware/regs/addressmap.h"
 #include "hardware/regs/sio.h"
+#include "led.h"
 
 #define VECTOR_TABLE 0x10000100
 
@@ -24,7 +25,6 @@ extern char __StackBottom;
 extern char __StackTop;
 
 extern int main(void);
-static int led_pin(){return 25;}
 
 uint32_t data_variable = 100;
 uint32_t bss_variable;

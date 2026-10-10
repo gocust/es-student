@@ -2,6 +2,7 @@
 #include "hardware/gpio.h"
 
 const uint LED_PIN = 25;
+int led_pin(void){return LED_PIN;}
 
 static bool led_state = false;
 

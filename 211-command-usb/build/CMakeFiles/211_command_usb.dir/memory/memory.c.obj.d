@@ -75,4 +75,5 @@ CMakeFiles/211_command_usb.dir/memory/memory.c.obj: \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
- C:/Repositories/pico/es-student/211-command-usb/device/device.h
+ C:/Repositories/pico/es-student/211-command-usb/device/device.h \
+ C:/Repositories/pico/es-student/211-command-usb/led/led.h
