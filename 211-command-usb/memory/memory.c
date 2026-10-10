@@ -94,13 +94,16 @@ void fw_info(void)
     printf("fw_info        0x%08x 0x%04x\n",(unsigned)fw_info_addr, (uint16_t)(*fw_info_addr));
 
     printf("commands       0x%08x\n", (unsigned)(&commands));
-    printf("- enable       0x%08x\n", (unsigned)((uintptr_t)commands[0].handler & ~1u));
-    printf("- disable      0x%08x\n", (unsigned)((uintptr_t)commands[1].handler & ~1u));
-    printf("- info         0x%08x\n", (unsigned)((uintptr_t)commands[2].handler & ~1u));
-    printf("- version      0x%08x\n", (unsigned)((uintptr_t)commands[3].handler & ~1u));
-    printf("- ping         0x%08x\n", (unsigned)((uintptr_t)commands[4].handler & ~1u));
-    printf("- mem_info     0x%08x\n", (unsigned)((uintptr_t)commands[5].handler & ~1u));
-    printf("- fw_info      0x%08x\n", (unsigned)((uintptr_t)commands[6].handler & ~1u));
+    for(int i = 0; i < command_count; i++){
+        printf("- %-10s     0x%08x\n", commands[i].name, (unsigned)((uintptr_t)commands[i].handler & ~1u));
+    }
+    // printf("- enable       0x%08x\n", (unsigned)((uintptr_t)commands[0].handler & ~1u));
+    // printf("- disable      0x%08x\n", (unsigned)((uintptr_t)commands[1].handler & ~1u));
+    // printf("- info         0x%08x\n", (unsigned)((uintptr_t)commands[2].handler & ~1u));
+    // printf("- version      0x%08x\n", (unsigned)((uintptr_t)commands[3].handler & ~1u));
+    // printf("- ping         0x%08x\n", (unsigned)((uintptr_t)commands[4].handler & ~1u));
+    // printf("- mem_info     0x%08x\n", (unsigned)((uintptr_t)commands[5].handler & ~1u));
+    // printf("- fw_info      0x%08x\n", (unsigned)((uintptr_t)commands[6].handler & ~1u));
 
     printf("DEVICE_PROJECT 0x%08x %-10s\n", (unsigned)(uintptr_t)&DEVICE_PROJECT, DEVICE_PROJECT);
     printf("DEVICE_BOARD   0x%08x %-10s\n", (unsigned)(uintptr_t)&DEVICE_BOARD, DEVICE_BOARD);
