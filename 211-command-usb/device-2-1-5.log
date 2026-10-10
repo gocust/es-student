@@ -3,14 +3,14 @@
 устройство: 2e8a:000a
 серийный номер: 530328473901851C
 порт: COM10
-начало: 2026-10-10T21:10:08
+начало: 2026-10-10T21:14:16
    0.000 --> dev_info
    0.001 <-- dev_info
    0.002 <-- dbg read_line:77 got dev_info
    0.003 <-- struct          address     size offset value
-   0.004 <-- device_card     0x20000f40    24
+   0.003 <-- device_card     0x20000f40    24
    0.005 <-- - version       0x20000f44     4      4 0x00000001
-   0.007 <-- - name          0x20000f48    13      8 berry Pi Trading Ltd
+   0.006 <-- - name          0x20000f48    13      8 berry Pi Trading Ltd
    0.008 <-- - revision      0x20000f40     1      0 0x00000002
-   0.010 <-- fields 18, sizeof 24, padding 6
+   0.009 <-- fields 18, sizeof 24, padding 6
 итог: отправлено команд 1, принято строк 8
