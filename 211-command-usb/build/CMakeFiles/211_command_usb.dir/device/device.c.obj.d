@@ -1,15 +1,19 @@
 CMakeFiles/211_command_usb.dir/device/device.c.obj: \
  C:/Repositories/pico/es-student/211-command-usb/device/device.c \
  C:/Repositories/pico/es-student/211-command-usb/device/device.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdint.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/stdio.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/_ansi.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/newlib.h \
- C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/config.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
- C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/features.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
- C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stddef.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdarg.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/reent.h \
@@ -24,10 +28,6 @@ CMakeFiles/211_command_usb.dir/device/device.c.obj: \
  C:/Repositories/pico/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdbool.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/assert.h \
- C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdint.h \
- C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
- C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
- C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
  C:/Repositories/pico/es-student/211-command-usb/build/generated/pico_base/pico/version.h \
  C:/Repositories/pico/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
  C:/Repositories/pico/es-student/211-command-usb/build/generated/pico_base/pico/config_autogen.h \

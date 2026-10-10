@@ -18,4 +18,8 @@ CMakeFiles/211_command_usb.dir/logging/log.c.obj: \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/machine/_types.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/lock.h \
  C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
- C:/Repositories/pico/es-student/211-command-usb/device/device.h
+ C:/Repositories/pico/es-student/211-command-usb/device/device.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/lib/gcc/arm-none-eabi/15.3.1/include/stdint.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/stdint.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/sys/_stdint.h
