@@ -44,13 +44,6 @@ void dev_info(void){
     printf("device_card     0x%08x    %u\n", &device_card, szf);
 
     printf("- %-13s 0x%08x %5u %6u 0x%08x\n",
-        "revision",
-        &device_card.revision,
-        sizeof(device_card.revision),
-        offsetof(struct info_t, revision),
-        device_card.revision);
-
-    printf("- %-13s 0x%08x %5u %6u 0x%08x\n",
         "version",
         &device_card.version,
         sizeof(device_card.version),
@@ -64,7 +57,14 @@ void dev_info(void){
         offsetof(struct info_t, name),
         *device_card.name);
     
-    printf("fields %u sizeof %u padding %u\n", fields, szf, szf-fields);
+    printf("- %-13s 0x%08x %5u %6u 0x%08x\n",
+        "revision",
+        &device_card.revision,
+        sizeof(device_card.revision),
+        offsetof(struct info_t, revision),
+        device_card.revision);
+
+    printf("fields %u, sizeof %u, padding %u\n", fields, szf, szf-fields);
 
 
 }
