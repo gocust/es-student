@@ -5,6 +5,10 @@
 #include "command.h"
 #include <stdlib.h>
 #include "device.h"
+#include "hardware/regs/addressmap.h"
+#include "hardware/regs/sio.h"
+
+#define VECTOR_TABLE 0x10000100
 
 extern char __flash_binary_start;
 extern char __flash_binary_end;
@@ -24,6 +28,8 @@ extern int main(void);
 
 uint32_t data_variable = 100;
 uint32_t bss_variable;
+
+
 
 
 static void row(const char *name, uintptr_t start, uintptr_t end)
@@ -109,4 +115,21 @@ void fw_info(void)
 
 
     free(heap_variable);
+}
+
+void boot_info(void){
+    const uint32_t *vectors = (const uint32_t *)VECTOR_TABLE;
+
+    uint32_t stack_top = vectors[0];
+    uint32_t reset_handler = vectors[1];
+    volatile uint32_t *gpio_in = (uint32_t *)(SIO_BASE + SIO_GPIO_IN_OFFSET);
+    uint32_t level = (*gpio_in >> 25) & 1u;
+
+    printf("vector table   %08x\n", vectors);
+    printf("  stack top    %08x\n", vectors[0]);
+    printf("  reset        %08x\n", vectors[1]);
+    printf("  reset (even) %08x\n", vectors[1] & ~1u);
+    printf("gpio in        %08x\n", gpio_in);
+    printf("  led bit      %01x\n", level);
+    printf("  gpio_get     %01x\n", gpio_get(25));
 }
