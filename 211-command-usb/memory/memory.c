@@ -3,6 +3,8 @@
 #include "hardware/regs/addressmap.h"
 #include "pico/stdlib.h"
 #include "command.h"
+#include <stdlib.h>
+#include "device.h"
 
 extern char __flash_binary_start;
 extern char __flash_binary_end;
@@ -17,9 +19,9 @@ extern char __HeapLimit;
 extern char __StackBottom;
 extern char __StackTop;
 
-int main(void);
+extern int main(void);
 
-// uint16_t *main_code = (uint16_t *)((uintptr_t)main & ~1u);
+
 uint32_t data_variable = 100;
 uint32_t bss_variable;
 
@@ -29,6 +31,7 @@ static void row(const char *name, uintptr_t start, uintptr_t end)
     printf("%-10s 0x%08x 0x%08x %8u\n",
            name, (unsigned)start, (unsigned)end, (unsigned)(end - start));
 }
+
 
 void mem_info(void)
 {
@@ -69,4 +72,44 @@ void mem_info(void)
     printf("  ram free    %8u for heap and %u for stack\n",
     (unsigned)((uintptr_t)&__HeapLimit - (uintptr_t)&__bss_end__),
     (unsigned)((uintptr_t)&__StackTop - (uintptr_t)&__StackBottom));
+}
+
+void fw_info(void)
+{
+    data_variable++; bss_variable++;
+    
+    uint32_t stack_variable = 1946;
+    uint32_t *heap_variable = malloc(sizeof(uint32_t));
+
+    uint16_t *main_code = (uint16_t *)((uintptr_t)main & ~1u);
+    uint16_t *fw_info_addr = (uint16_t *)((uintptr_t)fw_info & ~1u);
+
+    if (heap_variable != NULL)
+    {
+        *heap_variable = 1951;
+    }
+    printf("object         address     value\n");
+
+    printf("main           0x%08x 0x%04x\n", (unsigned)main_code, (uint16_t)(*main_code));
+    printf("fw_info        0x%08x 0x%04x\n",(unsigned)fw_info_addr, (uint16_t)(*fw_info_addr));
+
+    printf("commands       0x%08x\n", (unsigned)(&commands));
+    printf("- enable       0x%08x\n", (unsigned)((uintptr_t)commands[0].handler & ~1u));
+    printf("- disable      0x%08x\n", (unsigned)((uintptr_t)commands[1].handler & ~1u));
+    printf("- info         0x%08x\n", (unsigned)((uintptr_t)commands[2].handler & ~1u));
+    printf("- version      0x%08x\n", (unsigned)((uintptr_t)commands[3].handler & ~1u));
+    printf("- ping         0x%08x\n", (unsigned)((uintptr_t)commands[4].handler & ~1u));
+    printf("- mem_info     0x%08x\n", (unsigned)((uintptr_t)commands[5].handler & ~1u));
+    printf("- fw_info      0x%08x\n", (unsigned)((uintptr_t)commands[6].handler & ~1u));
+
+    printf("DEVICE_PROJECT 0x%08x %-10s\n", (unsigned)(uintptr_t)&DEVICE_PROJECT, DEVICE_PROJECT);
+    printf("DEVICE_BOARD   0x%08x %-10s\n", (unsigned)(uintptr_t)&DEVICE_BOARD, DEVICE_BOARD);
+    
+    printf("data_variable  0x%08x %u\n", (unsigned)(uintptr_t)&data_variable, data_variable);
+    printf("bss_variable   0x%08x %u\n", (unsigned)(uintptr_t)&bss_variable, bss_variable);
+    printf("stack_variable 0x%08x %u\n", (unsigned)(uintptr_t)&stack_variable, stack_variable);
+    printf("heap_variable  0x%08x %u\n", (unsigned)(uintptr_t)heap_variable, *heap_variable);
+
+
+    free(heap_variable);
 }

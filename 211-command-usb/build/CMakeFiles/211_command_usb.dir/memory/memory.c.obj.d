@@ -71,4 +71,8 @@ CMakeFiles/211_command_usb.dir/memory/memory.c.obj: \
  C:/Repositories/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  C:/Repositories/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
  C:/Repositories/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- C:/Repositories/pico/es-student/211-command-usb/command.h
+ C:/Repositories/pico/es-student/211-command-usb/command.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/stdlib.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
+ C:/Program\ Files/Arm/GNU\ Toolchain\ mingw-w64-x86_64-arm-none-eabi/arm-none-eabi/include/alloca.h \
+ C:/Repositories/pico/es-student/211-command-usb/device/device.h
